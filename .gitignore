@@ -1,0 +1,13 @@
+target/
+config/local.properties
+.tools/
+.tools.bak/
+.idea/
+.classpath
+.project
+.settings/
+*.iml
+.DS_Store
+src/main/webapp/uploads/*
+!src/main/webapp/uploads/.gitkeep
+uploads/

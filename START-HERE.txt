@@ -1,0 +1,49 @@
+ResearchSphere - FINAL RUN GUIDE
+================================
+
+ONE-TIME SETUP
+  1. Install Java JDK 17+ (https://adoptium.net/)
+  2. Install XAMPP and start MySQL (green "Running" in XAMPP Control Panel)
+
+EVERY TIME YOU RUN THE APP
+  1. Start MySQL in XAMPP
+  2. Double-click START.bat in this folder
+  3. Wait for build + server (first run may take several minutes)
+  4. Browser opens: http://localhost:8080/ResearchSphere/login
+
+YOUR DATA IS KEPT ON RESTART
+  START.bat no longer wipes the database every time.
+  Tasks, projects, and files you add stay in MySQL after restart.
+  Demo seed data loads only on first run (empty database).
+
+DEMO LOGIN (always works after START.bat)
+  Email:    admin@researchsphere.edu
+  Password: password123
+
+OTHER DEMO USERS (same password)
+  faculty@researchsphere.edu
+  student@researchsphere.edu
+  emily@researchsphere.edu
+
+UPLOADED FILES LOCATION
+  C:\Users\Puneeth\ResearchSphere\uploads\researchsphere-uploads\
+  (created automatically; survives Jetty restarts)
+
+MODULES VERIFIED
+  Login / Logout / Register / Remember-me cookie
+  Dashboard + charts
+  Projects CRUD + team link + file upload/download
+  Tasks CRUD + status update (PUT simulation)
+  Teams CRUD + add/remove members
+  Milestones CRUD + progress update
+  Discussions + comments + delete
+  Admin panel (ADMIN role)
+  HTTP methods demo: /ResearchSphere/http-methods
+
+STOP SERVER
+  Press Ctrl+C in the START.bat window
+
+TROUBLESHOOTING
+  - 503 error: run START.bat again (rebuilds with fixes)
+  - Login fails: ensure MySQL is running; START.bat resets demo passwords
+  - Upload fails: use PDF/DOC/TXT under 10MB; check uploads folder above
